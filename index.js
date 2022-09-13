@@ -21,7 +21,7 @@ app.get('/api/item/:slug', (req, res) => {
 
 app.post('/api/callback', (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-
+    res.sendStatus(200)
     res.send(req.body);
 });
 
